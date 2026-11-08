@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.timer-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.current-timer {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.hitparade {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f8f9fa;
+  margin: 5px 0;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background-color: #e9ecef;
+}
+
+li.favorite {
+  background-color: #fff3cd;
+}
+
+.timer-time {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.timer-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.timer-actions button {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.delete {
+  background-color: #e74c3c;
+}
+
+.delete:hover {
+  background-color: #c0392b;
+}
+
+.new-timer {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+} 

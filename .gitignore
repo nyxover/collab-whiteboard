@@ -1,0 +1,24 @@
+# ===== Secrets (NE JAMAIS COMMITTER) =====
+.env
+*.env
+!*.example.env
+.env.*
+
+# ===== Hors périmètre (autres projets du workspace) =====
+ComfyUI/
+ComfyUIWorkflow/
+minutrHit/
+.vscode/
+
+# ===== Rust / backend =====
+target/
+**/target/
+
+# ===== Node / frontend =====
+node_modules/
+dist/
+
+# ===== Logs & divers =====
+*.log
+.DS_Store
+Thumbs.db

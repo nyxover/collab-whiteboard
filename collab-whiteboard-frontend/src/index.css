@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (instead of prefers-color-scheme media query) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* CodeMirror: match dark mode */
+.dark .cm-editor {
+  background-color: #1e1e22;
+  color: #e5e7eb;
+}
+.dark .cm-gutters {
+  background-color: #16181d;
+  color: #6b7280;
+  border-right-color: #374151;
+}
+.dark .cm-activeLine {
+  background-color: #26282f;
+}
+.dark .cm-activeLineGutter {
+  background-color: #26282f;
+  color: #9ca3af;
+}
+.dark .cm-selectionBackground,
+.dark .cm-content ::selection {
+  background-color: #264f78 !important;
+}
