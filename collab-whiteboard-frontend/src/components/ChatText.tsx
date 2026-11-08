@@ -59,16 +59,16 @@ export function ChatText({ roomId }: { roomId: string; userId: string }) {
           </div>
         ))}
       </div>
-      <div className="p-4 border-t border-gray-200 dark:border-gray-700">
+      <div className="p-2 md:p-4 border-t border-gray-200 dark:border-gray-700 flex gap-2">
         <input
           type="text"
           placeholder="Type message..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 dark:text-gray-100 text-sm placeholder-gray-400"
+          className="flex-1 min-w-0 p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 dark:text-gray-100 text-sm placeholder-gray-400"
         />
-        <button onClick={sendMessage} className="mt-2 px-4 py-2 bg-blue-600 text-white rounded text-sm w-full">
+        <button onClick={sendMessage} className="px-4 py-2 bg-blue-600 text-white rounded text-sm shrink-0 self-stretch">
           Send
         </button>
       </div>

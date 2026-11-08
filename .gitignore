@@ -9,6 +9,7 @@ ComfyUI/
 ComfyUIWorkflow/
 minutrHit/
 .vscode/
+screenshot/
 
 # ===== Rust / backend =====
 target/

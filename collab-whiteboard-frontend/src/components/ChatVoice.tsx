@@ -51,12 +51,12 @@ export function ChatVoice({ roomId, userId }: { roomId: string; userId: string }
   };
 
   return (
-    <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 transition-colors">
-      <h3 className="font-semibold mb-2 dark:text-gray-200">Mic on / off</h3>
+    <div className="px-3 py-2 md:p-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 transition-colors">
+      <h3 className="font-semibold mb-2 dark:text-gray-200 text-sm md:text-base">Mic on / off</h3>
       <div className="flex items-center justify-center gap-4">
         <button
           onClick={toggleMute}
-          className={`w-16 h-16 rounded-full flex items-center justify-center ${isMuted ? "bg-red-500" : "bg-green-500"} text-white shadow-lg transition`}
+          className={`w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center ${isMuted ? "bg-red-500" : "bg-green-500"} text-white shadow-lg transition`}
         >
           {isMuted ? "Off" : "On"}
         </button>
